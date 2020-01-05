@@ -1,0 +1,40 @@
+put<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Put</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+<form >
+    <input type="text" name="Mytext" id="Mytext"> 
+    <input type="submit" value="Submit">     
+</form>
+    </body>
+    <!-- jQuery -->
+  <script
+			  src="https://code.jquery.com/jquery-3.4.1.js"
+			  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+			  crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(funtion(){
+            $("form").submit(function(e){
+                e.preventDefault();
+                $.ajax({
+                     url : '/article',
+                     method : 'PUT',
+                     data : {
+                         client : 'put'
+                     }, success : function(res){
+                         console.log(res);
+                     }, error : function(err){
+                         console.log(err);
+                     }
+                })
+            });
+        });
+    </script>
+		
+</html>

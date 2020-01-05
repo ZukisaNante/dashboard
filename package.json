@@ -1,0 +1,37 @@
+{
+  "name": "dashboard",
+  "version": "1.0.0",
+  "description": "role login system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZukisaNante/dashboard.git"
+  },
+  "keywords": [
+    "role",
+    "login",
+    "system"
+  ],
+  "author": "Zukisa NANTE",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ZukisaNante/dashboard/issues"
+  },
+  "homepage": "https://github.com/ZukisaNante/dashboard#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "http-msgs": "^1.0.9",
+    "jsonwebtoken": "^8.5.1",
+    "jwt-login": "0.0.3",
+    "jwt-parser": "^2.0.0",
+    "mongodb": "^3.4.1",
+    "mongoose": "^5.8.4",
+    "nodemon": "^2.0.2",
+    "user-groups-roles": "^2.0.4"
+  }
+}
